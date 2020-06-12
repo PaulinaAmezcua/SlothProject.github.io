@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        /* If the screen size is 601px or more, set the font-size of <div> to 80px */
+        @media only screen and (min-width: 601px) {
+        div.example {
+    font-size: 80px;
+  }
+        /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+        @media print {
+            .screen-only {
+                display: none;
+            }
+        } 
+        .indent {
+            margin:50px;
+            text-align: center;
+        }
+       </style>
+        <title>Sloth Diversity</title>
+        <link rel="stylesheet" href="bootstrap.css">
+    </head>
+    <body>
+        <div class ="indent">
+        <h1>Sloth Diversity</h1>
+    <table class="table table-hover">
+    <thead>
+        <tr class="table-primary">
+    		<th scope="col">Name of Species</th>
+    		<th scope="col">Scientific Name</th>
+    		<th scope="col">Number of Fingers</th>
+    		<th scope="col">Habitat Location</th>
+    		<th scope="col">Conservation Status</th>
+    		<th scope="col">Picture</th>
+    	</tr>
+    </thead>
+    <tbody>
+        <tr class="table-light">
+        	<th scope="row">Maned Sloth</th>
+            <td>Bradypus Torquatus</td>
+            <td>Three-toed</td>
+            <td>Brazil</td>
+            <td>Vulnerable</td>
+            <td><img src="manedsloth.jpg" height="200"></td>
+        </tr>
+        <tr>
+    		<tr class="table-light">
+            <th scope="row">Pygmy Sloth</th>
+            <td>Bradypus Pygmaeus</td>
+            <td>Three-toed</td>
+            <td>Isla Escudo de Veraguas, Panama</td>
+            <td>Critically Endangered</td>
+            <td><img src="pygmysloth.jpg" height="200"></td>
+        </tr>
+        <tr>
+    		<tr class="table-light">
+            <th scope="row">Pale-throated Sloth</th>
+    		<td>Bradypus Tridactylus</td>
+            <td>Three-toed</td>
+            <td>Northern South America</td>
+            <td>Least Concern</td>
+            <td><img src="palesloth.jpg" height="200"></td>
+        </tr>
+        <tr>
+            <tr class="table-light">
+            <th scope="row">Brown-throated Sloth</th>
+            <td>Bradypus Variegatus</td>
+            <td>Three-toed</td>
+            <td>Central and South America</td>
+            <td>Least Concern</td>
+            <td><img src="brownsloth.jpg" height="200"></td>
+        <tr>
+    		<tr class="table-light">
+            <th scope="row">Linnaeus's Sloth</th>
+            <td>Choloepus Didactylus</td>
+            <td>Two-toed</td>
+            <td>South America</td>
+            <td>Least Concern</td>
+            <td><img src="linsloth.jpg" height="200"></td>
+    	</tr>
+    	<tr>
+    		<tr class="table-light">
+            <th scope="row">Hoffmann's Sloth</th>
+    		<td>Choloepus Hoffmanni</td>
+     		<td>Two-toed</td>
+    		<td>Central and South America</td>
+     		<td>Least Concern</td>
+     		<td><img src="hofsloth.jpg" height="200"></td>
+    	</tr>
+    </tbody>
+    </table>
+    <br>
+        <br>
+        <p class="screen-only"><a href="index.html">Go back to Main Menu</a></p>
+        <br>
+    <div>
+</body>
+</html>
