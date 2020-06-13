@@ -12,31 +12,42 @@
             margin:50px;
             text-align: center;
         }
-        .table-responsive {
-    min-height: .01%;
-    overflow-x: auto;
+*Mobile View*/
+@media only screen and  (max-width: 760px) {
+
+td, tr { display: block; }
+
+/* Hide table headers (but not display: none;, for accessibility) */
+
+thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
-@media screen and (max-width: 767px) {
-    .table-responsive {
-        width: 100%;
-        margin-bottom: 15px;
-        overflow-y: hidden;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 1px solid #ddd;
-    }
-    .table-responsive > .table {
-        margin-bottom: 0;
-    }
-    .table-responsive > .table > thead > tr > th,
-    .table-responsive > .table > tbody > tr > th,
-    .table-responsive > .table > tfoot > tr > th,
-    .table-responsive > .table > thead > tr > td,
-    .table-responsive > .table > tbody > tr > td,
-    .table-responsive > .table > tfoot > tr > td {
-        white-space: nowrap;
-    }
+
+tr { border: 1px solid #E74C3C; }
+
+tr + tr { margin-top: 1.5em; }
+
+td {
+  /* make like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 50%;
+  background-color: #F8D9D5;
+  text-align: left;
 }
-       </style>
+
+td:before {
+  content: attr(data-label);
+  display: inline-block;
+  line-height: 1.5;
+  margin-left: -100%;
+  width: 100%;
+  white-space: nowrap;
+}
+        </style>
         <title>Sloth Diversity</title>
         <link rel="stylesheet" href="bootstrap.css">
     </head>
