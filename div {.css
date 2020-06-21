@@ -1,0 +1,16 @@
+div {
+	::selection {
+		background: #FFD700;
+}
+}
+div p {
+	::selection {
+		background: #FFD700;
+	}
+
+}
+div ul {
+	::selection {
+		background: #F0FFF0;
+	}
+}

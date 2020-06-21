@@ -1,0 +1,14 @@
+div {
+	font-size: 15px;
+}
+p {
+	::selection {
+		background: #FFD700;
+	}
+
+}
+ul {
+	::selection {
+		background: #F0FFF0;
+	}
+}
